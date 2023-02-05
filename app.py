@@ -1,7 +1,6 @@
 import requests
 import streamlit as st
 import time
-import json
 
 IMG_URL = st.secrets.endpoints.IMG_URL
 # API endpoint URLs
