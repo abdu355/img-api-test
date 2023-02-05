@@ -3,14 +3,14 @@ import streamlit as st
 import time
 import json
 
-IMG_URL = 'https://icons.veryicon.com/png/o/business/new-vision-2/picture-loading-failed-1.png'
+IMG_URL = st.secrets.endpoints.IMG_URL
 # API endpoint URLs
-DALLE_API = "https://api.openai.com/v1/images/generations"
-STABLE_DIFFUSION_API = "https://api.replicate.com/v1/predictions"
+DALLE_API = st.secrets.endpoints.DALLE_API
+STABLE_DIFFUSION_API = st.secrets.endpoints.STABLE_DIFFUSION_API
 
 # API credentials
-DALLE_API_KEY = "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"
-STABLE_DIFFUSION_API_KEY = "8e572314a6ee3c33ffa74a5e8673343a6eb4ee14"
+DALLE_API_KEY = st.secrets.credentials.DALLE_API_KEY
+STABLE_DIFFUSION_API_KEY = st.secrets.credentials.STABLE_DIFFUSION_API_KEY
 
 
 @st.cache
